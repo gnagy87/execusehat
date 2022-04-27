@@ -10,7 +10,7 @@ const ExecuseItem = (props) => {
     <div>
       <h3>{props.title}</h3>
       <p>{props.author}</p>
-      <button onClick={deleteItem}>Delete</button>
+      <button onClick={deleteItem}>Törlöm a kifogást</button>
     </div>
   );
 }

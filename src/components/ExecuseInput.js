@@ -40,7 +40,7 @@ const ExecuseInput = props => {
       {addExecuseFlag &&
       <form onSubmit={submitExecuseHandler}>
         <div>
-          <label>Execuse</label>
+          <label>Kifogás</label>
           <input 
             type="text"
             value={enteredExecuse}
@@ -48,18 +48,18 @@ const ExecuseInput = props => {
           />
         </div>
         <div>
-          <label>Name</label>
+          <label>Név</label>
           <input 
             type="text"
             value={enteredName}
             onChange={nameChnageHandler}/>
         </div>
         <div>
-          <button type='submit'>Save</button>
-          <button onClick={cancelButtonHandler}>Cancel</button>
+          <button type='submit'>Mentés</button>
+          <button onClick={cancelButtonHandler}>Mégsem</button>
         </div>
       </form>}
-      {!addExecuseFlag && <button onClick={execuseFlagChangeHandler}>Add Execuse</button>}
+      {!addExecuseFlag && <button onClick={execuseFlagChangeHandler}>Kifogás hozzáadása</button>}
     </>
   );
 }
